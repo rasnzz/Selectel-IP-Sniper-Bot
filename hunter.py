@@ -32,8 +32,8 @@ _missing = [v for v in _required if not os.getenv(v)]
 if _missing:
     sys.exit(f"Не заданы переменные окружения: {', '.join(_missing)}\nСкопируй .env.example в .env и заполни значения.")
 
-TG_TOKEN = os.getenv('6531618162:AAG5iytEMV6usf3XqcDKCBuGiS0wNvjphnk')
-ADMIN_ID = int(os.getenv('455455922'))
+TG_TOKEN = os.getenv('TG_TOKEN')
+ADMIN_ID = int(os.getenv('ADMIN_ID'))
 TG_PROXY = os.getenv('TG_PROXY')
 
 # --- КОНСТАНТЫ ---
